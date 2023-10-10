@@ -1,0 +1,26 @@
+<!--pages/pattern/pattern.wxml-->
+<view class="img">
+  <image src="1.JPG" mode="widthFix" class="img1"/>
+</view>
+
+<button type="primary" class="button1" style="background-color: #03a6884f;color: #00FFFF;font-size: 55rpx;width: auto;border-radius: 50rpx;" bindtap="local" >
+<image src="2.JPG" mode="widthFix" style="width: 50px;" class="img2"/>
+<text class="t1">本地对战</text>
+</button>
+
+<button type="primary" class="button2" style="background-color: #03a6884f;color: #00FFFF;font-size: 55rpx;width: auto;border-radius: 50rpx;" bindtap="ai" >
+<image src="2.JPG" mode="widthFix" style="width: 50px;" class="img2"/>
+<text class="t1">人机对战</text>
+</button>
+
+<button type="primary" class="button3" style="background-color: #03a6884f;color: #00FFFF;font-size: 55rpx;width: auto;border-radius: 50rpx;" bindtap="begin" >
+<image src="2.JPG" mode="widthFix" style="width: 50px;" class="img2"/>
+<text class="t1">在线对战</text>
+</button>
+
+<navigator url="../main/main" >
+  <image src="3.JPG" mode="widthFix" class="img3"/>
+</navigator>
+<!-- <view class="img">
+  <image src="3.JPG" mode="widthFix" class="img3"/>
+</view> -->

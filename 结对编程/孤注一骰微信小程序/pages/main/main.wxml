@@ -1,0 +1,126 @@
+<!--pages/main/main.wxml-->
+<!-- <text>pages/main/main.wxml</text> -->
+<view class="img">
+  <image src="1.JPG" mode="widthFix" class="img1"/>
+</view>
+
+<button type="primary" class="button1" style="background-color: #03a688ab;color: #00FFFF;font-size: 55rpx;width: auto;border-radius: 50rpx;" bindtap="begin" >
+<image src="2.JPG" mode="widthFix" style="width: 50px;" class="img2"/>
+<text class="t1">开始游戏</text>
+</button>
+<!-- <navigator url="/pages/info/info" open-type="navigate">tabbar页面的跳转</navigator> -->
+
+
+<button type="primary" class="button2" style="background-color: #03a688ab;color: #00FFFF;font-size: 55rpx;width: auto;border-radius: 50rpx;" bindtap="begin1">
+<image src="2.JPG" mode="widthFix" style="width: 50px;" class="img3"/>
+<text class="t2">试玩模式</text>
+</button>
+
+<!-- <view class="button30">
+  <button type="primary" class="button3" style="background-color: #332A68;color: #4D9999;font-size: 35rpx;width: auto;border-radius: 50rpx;">
+<text class="t3">游戏指南</text>
+</button>
+</view> -->
+<!-- <button type="primary" class="button3" style="background-color: #332A68;color: #4D9999;font-size: 35rpx;width: auto;border-radius: 50rpx;">
+<text class="t3">游戏指南</text>
+</button> -->
+
+
+<view class="img">
+  <image src="3.JPG" mode="widthFix" class="img4"/>
+</view>
+
+
+<view class="button30">
+  <view wx:if="{{hidden}}">
+   <button style="margin-top: 25rpx;color: aqua;width: auto;background-color: teal;" wx:if="{{hidden}}"  bindtap='xianshi' class="bottom3">游戏指南</button>
+  </view>
+  <!-- 显示 -->
+
+  <view hidden='{{hidden}}' >
+  <view class="bac"></view>
+  <scroll-view class="guide" scroll-y>
+    <view class="guide1">
+      <text style="margin: 69px;font-size: 35px;font-weight: 600;" class="t1">游戏指南</text>
+    </view>
+    <view>
+      <text>
+    进入游戏，选择游戏模式后，设置游戏局数和玩家个人筹码数
+    每一局游戏内有三轮投掷机会，玩家一人一次轮流投掷骰子，每个玩家有5个骰子
+    前两次投掷骰子之后可以选择锁定0~5个骰子，锁定的骰子位于选定区域不再改变
+    前两轮每轮投掷结束并在所有玩家锁定骰子后，每位玩家可以选择增加倍率：0，1，2，3。选择完成后进入下一轮。
+    第三轮投掷结束后，所有玩家的全部骰子自动锁定并进行计分（得分为五个骰子的点数总和+奖励分），得出最终结果，筹码划分。
+      </text>
+      </view>
+    <view>
+      <text style="font-size: 20px;font-weight: 550;">
+      奖励分示例：
+      </text>
+      <text>双对 ：10分
+      </text>
+      <image src="5.JPG" mode="widthFix" class="img6"/>
+      <text>
+      三连 ：10分
+      </text>
+      <image src="6.JPG" mode="widthFix" class="img7"/>
+      <text>
+      葫芦：20分
+      </text>
+      <image src="7.JPG" mode="widthFix" class="img8"/>
+      <text>
+      四连： 40分
+      </text>
+      <image src="8.JPG" mode="widthFix" class="img9"/>
+      <text>
+      五连 ：100分
+      </text>
+      <image src="9.JPG" mode="widthFix" class="img10"/>
+      <text>
+      小顺子：30分
+      </text>
+      <image src="10.JPG" mode="widthFix" class="img11"/>
+      <text>
+      大顺子：60分
+      </text>
+      <image src="11.JPG" mode="widthFix" class="img12"/>
+    </view>
+  <view>
+    <text style="font-size: 20px;font-weight: 550;">
+      结算规则：
+      </text>
+    <text>分数最高的玩家从所有其它玩家手里赢得（二人分差的绝对值）*（总倍率）的筹码。
+      N局游戏后，筹码最多的玩家获胜。
+      如若中途有玩家筹码小于等于0，则该玩家被击飞，游戏直接结束（都没了的意思哦）。
+    </text>
+  </view>
+    
+  </scroll-view>
+    <button style="margin-top: 25rpx;color: yellow;width: auto;background-color: teal;" bindtap='yincang' class="bottom3">游戏指南</button>
+  </view>
+</view>
+
+
+<view class="img">
+  <image src="4.JPG" mode="widthFix" class="img5"/>
+</view>
+<view class="button30">
+  <view wx:if="{{hidden1}}">
+   <button style="margin-top: 25rpx;color: aqua;width: auto;background-color: teal;height: 70px;width: 70px;" wx:if="{{hidden1}}"  bindtap='xianshi1' class="bottom5"></button>
+  </view>
+  <!-- 显示 -->
+  <view hidden='{{hidden1}}' >
+  <view class="bac1">
+    <view style="text-align: center;color: white;font-size: 35px;margin-top: 10px;margin-bottom: 10px;">积分榜</view>
+    <view style="width: 100%;background-color: #DAC871;height: 5px;"></view>
+    <view wx:if="{{grade_player1 < grade_player2}}" class="gradetext">
+       <view>玩家2积分： {{grade_player2}}</view>
+       <view>玩家1积分： {{grade_player1}}</view>
+    </view>
+    <view wx:else class="gradetext">
+       <view>玩家1积分： {{grade_player1}}</view>
+       <view>玩家2积分： {{grade_player2}}</view>
+    </view>
+  </view>
+    <button style="margin-top: 25rpx;color: yellow;width: auto;background-color: teal;height: 70px;width: 70px;" bindtap='yincang1' class="bottom5"></button>
+  </view>
+</view>

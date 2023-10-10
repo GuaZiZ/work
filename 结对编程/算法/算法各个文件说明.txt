@@ -1,0 +1,3 @@
+local.py和local.js分别是本地对战的Python和JavaScript文件；
+ai.py和ai.js分别是最终版本的人机对战的Python和JavaScript文件；（其他ai_1和ai2都是为单元测试衍生的）
+开头是test的都是做单元测试的代码

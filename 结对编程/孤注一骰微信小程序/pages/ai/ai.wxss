@@ -1,0 +1,65 @@
+/* pages/local/local.wxss */
+.img1{
+  position: absolute;
+  width: 377.5px;
+  top: -1px;
+  left: -0.5px;
+}
+.img2{
+  position: absolute;
+  width: 75px;
+  top: 10%;
+  left: 2%;
+}
+.button1{
+  position: absolute;
+  top: 14%;
+  left: 29.2%;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+.list{
+  width: 20px;
+  position: absolute;
+  top: 36%;
+  left: 26.2%;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+}
+.list_two{
+  width: 20px;
+  position: absolute;
+  top: 35.5%;
+  right: 31.2%;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+}
+.gameOver{
+  width: 200px;
+  position: absolute;
+  top: 38%;
+  left: 23.5%;
+  display: block;
+  text-align: center;
+  line-height: 3;
+  font-size: 18px;
+  color: aliceblue;
+}
+.gameRound{
+  width: 180px;
+  position: absolute;
+  top: 35%;
+  left: 26%;
+  display: block;
+  text-align: left;
+  line-height: 2;
+  font-size: 16px;
+  color: aliceblue;
+}
+.t1{
+  position: absolute;
+  bottom: 5%;
+}

@@ -1,0 +1,43 @@
+<!--pages/local/local.wxml-->
+<view class="img">
+  <image src="1.JPG" mode="widthFix" class="img1" />
+</view>
+
+<navigator url="../main/main">
+  <image src="2.JPG" mode="widthFix" class="img2" />
+</navigator>
+<!-- ai骰子列表 -->
+<view class="list">
+  <view wx:for="{{numberArray}}" wx:key="*this">  
+      <rich-text nodes="{{before}}{{item}}{{after}}"/> 
+  </view>
+</view>
+<!-- 玩家2骰子列表 -->
+<view class="list_two">
+  <view wx:for="{{numberArray2}}" wx:key="*this">
+    <rich-text nodes="{{before}}{{item}}{{after}}"/> 
+  </view>
+</view>
+<!-- 本局得分 -->
+<view wx:if="{{end_round}}" class="gameRound">
+  <view>ai本局得分： {{ai_score_round}} </view>
+  <view>玩家本局得分： {{play2_score_round}} </view>
+  <view>{{ai_win_score_round}} </view>
+  <view>目前ai总分： {{ai_score}} </view>
+  <view>目前玩家总分： {{play2_score}} </view>
+  <view>目前ai积分： {{ai_integral}} </view>
+  <view>目前玩家积分： {{play2_integral}} </view>
+</view>
+<!-- 游戏结束 -->
+<view wx:if="{{overTitle}}" class="gameOver">
+  <text>{{overTitle}}</text>
+  <view>ai积分为： {{grade_ai}} </view>
+  <view>玩家积分为： {{grade_player2}} </view>
+</view>
+
+<button type="primary" class="button1" style="background-color: #48a795;color: black;font-size: 55rpx;width: auto;border-radius: 50rpx;" bindtap="begin">
+  开始游戏
+</button>
+<view hidden='{{hidden}}'>
+<text class="t1" style="color: aliceblue;">“祝各位玩家的筹码如y=kx（k>0），单调递增哦”</text>
+</view>

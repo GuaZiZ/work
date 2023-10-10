@@ -1,0 +1,4 @@
+<view class="wrapper">
+  <image class="dice" src="touzi_1.png" />
+  <view class="scroll-area"></view>
+</view>

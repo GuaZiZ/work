@@ -1,0 +1,20 @@
+<!--pages/list/list.wxml-->
+<view class="img">
+  <image src="1.JPG" mode="widthFix" class="img1"/>
+</view>
+<button class="buttons" style="font-size: 30rpx;" size="mini" bindtap="begin">修复</button>
+<image src="2.JPG" mode="widthFix" class="img2"/>
+<image src="3.JPG" mode="widthFix" class="img3"/>
+<image src="4.JPG" mode="widthFix" class="img4"/>
+<view>
+<text class="t1">健康游戏忠告</text>
+<text class="t2">抵制不良游戏  拒绝盗版游戏  注意自我保护  谨防受骗上当</text>
+<text class="t3">适度游戏益脑  沉迷游戏伤身  合理安排时间  享受健康生活</text>
+<text class="t4">加载中...</text>
+</view>
+<view class="pro">
+  <progress percent="{{deflautWidth}}" color="#FFFFFF" activeColor="#475F8B"  bindtap="progress"/>
+</view>
+<!-- <progress percent="{{deflautWidth}}" color="pink"  bindtap="progress" stroke-width="15" show-info class="pro"  /> -->
+<!-- <image src="1.JPG" mode="aspectFit"/> -->
+<text class="t5">K</text>

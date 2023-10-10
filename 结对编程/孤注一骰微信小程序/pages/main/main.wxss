@@ -1,0 +1,136 @@
+/* pages/main/main.wxss */
+.img1{
+  position: absolute;
+  width: 375px;
+}
+.img2{
+  position: relative;
+  top: 6px;
+  right: 2px;
+}
+.img3{
+  position: relative;
+  top: 6px;
+  right: 2px;
+}
+.img4{
+  position: absolute;
+  width: 210px;
+  top: 22%;
+  left: 23%;
+}
+.img5{
+  position: absolute;
+  width: 65px;
+  top: 11%;
+  right: 5px;
+}
+.button1{
+  position: absolute;
+  top: 70%;
+  left: 25%;
+}
+.button2{
+  position: absolute;
+  top: 80%;
+  left: 25%;
+}
+.button4{
+  position: absolute;
+}
+.t1{
+  position: relative;
+  bottom: 3.5px;
+}
+.t2{
+  position: relative;
+  bottom: 4px;
+}
+
+.bac{
+  position: absolute;
+  width: 320px;
+  height: 500px;
+  background-color: white;
+  left: 7.5%;
+  top: 19%;
+  border-radius: 30px;
+}
+.bac1{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  background-color: #FEE983;
+  left: 9%;
+  top: 20%;
+  border-radius: 30px;
+  border-color: #DAC871;
+  border-width: 5px;
+  border-style: solid;
+}
+.guide{
+  position: absolute;
+  width: 280px;
+  height: 440px;
+  left: 13.5%;
+  top: 22%;
+  /* background-color: white;
+  border-radius: 10px; */
+}
+.bottom3{
+  position: absolute;
+  bottom: 10px;
+  right: 67%;
+  border-radius: 20px;
+}
+/* .guide1{
+  position: relative;
+  border-top: 20px;
+} */
+.img6{
+  position: relative;
+  left: 17px;
+  width: 230px;
+}
+.img7{
+  position: relative;
+  left: 15px;
+  width: 228px;
+}
+.img8{
+  position: relative;
+  left: 14.5px;
+  width: 231px;
+}
+.img9{
+  position: relative;
+  left: 17px;
+  width: 230px;
+}
+.img10{
+  position: relative;
+  left: 17px;
+  width: 230px;
+}
+.img11{
+  position: relative;
+  left: 14px;
+  width: 233px;
+}
+.img12{
+  position: relative;
+  left: 16px;
+  width: 228px;
+}
+.bottom5{
+  position: absolute;
+  top: 10%;
+  right: 1%;
+  opacity: 0%;
+}
+.gradetext{
+  font-size: 24px;
+  margin-left: 32px;
+  margin-top: 32px;
+  line-height: 2;
+}
